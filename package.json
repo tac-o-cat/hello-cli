@@ -1,12 +1,22 @@
 {
   "name": "hello-cli",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A CLI to translate between languages in the terminal",
+  "main": "bin/index.js",
+  "bin": {
+    "tran": "./bin/index.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bin/index.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Minhee Kim",
+  "license": "ISC",
+  "dependencies": {
+    "@vitalets/google-translate-api": "^7.0.0",
+    "boxen": "^6.2.1",
+    "chalk": "^4.1.2",
+    "yargs": "^17.2.1"
+  }
 }
